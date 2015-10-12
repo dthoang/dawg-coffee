@@ -10,7 +10,6 @@ body {
 	background-color: #E9EAEE;
 }
 
-
 h1, h2, h3, h4, h5, h6 {
   	font-family: "Raleway", "Helvetica Neue", "Helvetica", "sans-serif";
 }
@@ -23,10 +22,6 @@ dd {
 	font-style: italic;
 	margin-left: 1em;
 
-}
-
-svg {
-	height: 1em;
 }
 
 /* Header Area */
@@ -53,13 +48,17 @@ nav ul a {
 	font-variant: small-caps;
 }
 
+nav svg {
+	height: 1em;
+}
+
 nav a:hover{
 	text-decoration: none;
 	color: #D87E28;
 	fill: #D87E28;
 }
 
-/* Headline */
+/* Headline styling */
 #headline {
 	font-style: italic;
 }
@@ -71,23 +70,29 @@ nav a:hover{
 	fill: #BC6026;
 }
 
-/* Information Section */
+/* Information/Cafe Section styling*/
 #information {
 	background-color: #DBDCE3;
 	padding-top: 2.5em;
 	padding-bottom: 1em;
 }
 
+#information svg {
+	fill: #BC6026;
+	height: 1.5em;
+	margin-bottom: 1.5em;
+}
+
 #map {
 	border-radius: 5px;
 }
 
-/* Menu */
+/* Menu styling */
 #menu {
 	padding-top: 1em;
 }
 
-/* Story */ 
+/* Story section styling */ 
 #story {
 	background-color: #DBDCE3;
 }
@@ -99,7 +104,7 @@ nav a:hover{
 	max-height: 300px;
 }
 
-/* footer */
+/* footer section styling*/
 #footer {
 	border-top: 3px solid #D87E28;
 	background-color: #AFB3C2;
@@ -114,7 +119,7 @@ nav a:hover{
 }
 
 
-/* Wide Screens */
+/* Section handles screens wider that 768px */
 @media screen and (min-width: 768px) {
     body {
     	font-size: 20px;
@@ -125,6 +130,7 @@ nav a:hover{
 		padding-bottom: 1em;
 	}
 
+	/* Header area */
     #headerArea {
     	background-image: url(../img/background-sm.jpg);
     	background-repeat: no-repeat;
@@ -133,12 +139,14 @@ nav a:hover{
     	height: 100%;
     	color: white;
     	text-align: right;
+    	padding-right: 3em;
     }
 
     #motto {
     	display: block;
     }
 
+    /* Headline */
     #headline {
     	font-size: 1.25em;
     	text-align: center;
@@ -148,8 +156,11 @@ nav a:hover{
 
     #headline svg {
     	display: block;
+    	margin: auto;
+    	margin-bottom: 1em;
     }
 
+    /* Navigation */
     nav.navbar-default {
     	background-color: rgba(24, 28, 34, 0.8);
     }
@@ -159,6 +170,7 @@ nav a:hover{
     	padding-right: 1em;
     }
 
+    /* Story section */
     #story {
     	padding-top: 1em;
     	padding-bottom: 1em;
@@ -168,10 +180,12 @@ nav a:hover{
     	max-height: 400px;
     }
 
+    /* Footer */
     #footer .col-sm-9 {
     	text-align: right;
     }
 
+    /* Coming soon (ordering section) */
     #comingSoon {
     	font-size: 20px;
     	padding-left: 5em;
@@ -179,6 +193,7 @@ nav a:hover{
     }
 }
 
+/* Section handles screens wider than 992px */
 @media screen and (min-width: 992px) {
 	#headerArea {
 		background-image: url(../img/background-md.jpg);
@@ -189,6 +204,7 @@ nav a:hover{
 	}
 }
 
+/* Screen handles screens wider than 1200px */
 @media screen and (min-width: 1200px) {
 	#headerArea {
 		background-image: url(../img/background-lg.jpg);
